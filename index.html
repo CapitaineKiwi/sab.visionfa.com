@@ -1,0 +1,82 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+
+export default function SABWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      {/* Navbar */}
+      <nav className="flex justify-between items-center px-6 py-4 bg-black/70 backdrop-blur-md sticky top-0 z-50">
+        <div className="flex items-center gap-2">
+          <img src="https://media.discordapp.net/attachments/1068665828112859177/1406577055596023808/SAB_seal.png?ex=68acdbb6&is=68ab8a36&hm=ea88da5e5ff04851f22614d592d1cbffb117c22af527168b0aa780ce548d75ed&=&format=webp&quality=lossless&width=856&height=856" alt="SAB Logo" className="h-10 w-10" />
+          <span className="font-bold text-lg">Website Special Agent Bureau</span>
+        </div>
+        <ul className="flex gap-6 text-sm font-medium">
+          <li><a href="#" className="hover:text-yellow-400">Home</a></li>
+          <li><a href="#" className="hover:text-yellow-400">Règlement</a></li>
+          <li><a href="#" className="hover:text-yellow-400">Manuel</a></li>
+          <li><a href="#" className="hover:text-yellow-400">Equipment</a></li>
+          <li><a href="#" className="hover:text-yellow-400">Division</a></li>
+          <li><a href="#" className="hover:text-yellow-400">Service</a></li>
+        </ul>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative w-full h-[70vh] bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://media.discordapp.net/attachments/1396014607511851029/1405920900523491450/Al9FuXA.png?ex=68ac72df&is=68ab215f&hm=26514a5771c8444c718139615d897ae41a292c26c2a78936a5f8e655a3cafedd&=&format=webp&quality=lossless&width=1521&height=856')" }}>
+        <div className="bg-black/70 p-8 rounded-2xl text-center max-w-2xl">
+          <h1 className="text-2xl font-bold mb-4">Rejoins l’univers SAB et plonge dans l’action !</h1>
+          <p className="mb-6 text-gray-300">
+            Incarnes un agent fédéral, sécurises les tribunaux, protèges les citoyens et neutralises les menaces
+            avant qu’il ne soit trop tard. Chaque mission compte ! Chaque décision peut sauver des vies.
+          </p>
+          <div className="flex gap-4 justify-center">
+            <Button className="bg-yellow-500 text-black font-bold px-6 py-2 rounded-full">SAB</Button>
+            <Button className="bg-white text-black font-bold px-6 py-2 rounded-full">GO TO JOIN</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Three Cards */}
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
+        <Card className="bg-gray-900 text-center p-6">
+          <CardContent className="text-white">
+            <h2 className="font-bold text-lg mb-2 text-white">Manuel</h2>
+            <p className="text-gray-300">Consulte les manuels officiels et maîtrise toutes les procédures.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 text-center p-6">
+          <CardContent className="text-white">
+            <h2 className="font-bold text-lg mb-2 text-white">Division</h2>
+            <p className="text-gray-300">Découvre et rejoins une division SAB adaptée à ton profil et à tes objectifs.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-900 text-center p-6">
+          <CardContent className="text-white">
+            <h2 className="font-bold text-lg mb-2 text-white">Service</h2>
+            <p className="text-gray-300">Découvre les missions SAB, expérimente le terrain et fais évoluer ton expérience.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Pictures Section */}
+      <section className="p-10">
+        <h2 className="text-xl font-bold mb-6 text-center">Pictures</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <img src="https://media.discordapp.net/attachments/1396014607511851029/1405921005456719872/sHes99D.png?ex=68ac72f8&is=68ab2178&hm=167aea14799e348b27b8237019100760af07daef3c90851d816ab3bc60a45f94&=&format=webp&quality=lossless&width=1521&height=856" alt="pic1" className="rounded-xl" />
+          <img src="https://media.discordapp.net/attachments/1396014607511851029/1405921006803095552/LciGIwQ.png?ex=68ac72f8&is=68ab2178&hm=cc3bfb7c8961c06b492bcb9ebe80879a50731e6fa58e72dd2213a44b48db3a0d&=&format=webp&quality=lossless&width=1521&height=856" alt="pic2" className="rounded-xl" />
+          <img src="https://media.discordapp.net/attachments/1396014607511851029/1404798016145195039/BmaW8pm.png?ex=68ac519a&is=68ab001a&hm=966f214b282f45335ab7c98298ef1fc385dcf9f1b4bac154ff142bfccb26735a&=&format=webp&quality=lossless&width=1521&height=856" alt="pic3" className="rounded-xl" />
+          <img src="https://media.discordapp.net/attachments/1396014607511851029/1404373989622550648/image.png?ex=68acc0f3&is=68ab6f73&hm=0189e7a35c065e998944c095b28faf20d0fcb0760a113e963ab9f758d4bb23bc&=&format=webp&quality=lossless&width=1521&height=856" alt="pic4" className="rounded-xl" />
+          <img src="https://media.discordapp.net/attachments/1396014607511851029/1403675478572798032/Capture_decran_2025-08-09_111224.png?ex=68acd969&is=68ab87e9&hm=fb1a45bcf98b6cd8a53070906dd6d137b79d5bf91dbc67bfc414d03f833ca55a&=&format=webp&quality=lossless&width=1532&height=856" alt="pic5" className="rounded-xl" />
+          <img src="https://media.discordapp.net/attachments/1396014607511851029/1399908535239835722/image.png?ex=68ac542b&is=68ab02ab&hm=5938f6f3c811483f14e7a6636aa075c4c27c8317e4fcc93b691665a62e3b8c85&=&format=webp&quality=lossless&width=1786&height=856" alt="pic6" className="rounded-xl" />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-gray-500 text-center p-6 text-sm">
+        © 2025 Special Agent Bureau. Tous droits réservés.
+      </footer>
+    </div>
+  );
+}
