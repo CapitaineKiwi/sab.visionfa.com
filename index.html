@@ -1,157 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAB Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
-    }
-    /* Navbar */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #000;
-      position: sticky;
-      top: 0;
-    }
-    nav img {
-      height: 50px;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #aaa;
-    }
-
-    /* Hero */
-    .hero {
-      background: url("https://media.discordapp.net/attachments/1396014607511851029/1405920900523491450/Al9FuXA.png") no-repeat center center/cover;
-      height: 80vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-
-    /* Services */
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .service {
-      background-color: #222;
-      padding: 2rem;
-      border-radius: 15px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .service:hover {
-      transform: scale(1.05);
-    }
-    .service h2 {
-      color: #fff;
-    }
-    .service p {
-      color: #ccc;
-    }
-
-    /* Galerie */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #000;
-      color: #aaa;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Special Agent Bureau</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="manuel.html">Manuel</a>
+      <a href="protocoles.html">Protocoles</a>
+      <a href="divisions/investigation.html">Divisions</a>
+      <a href="chiefs.html">Chief Office</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+  </header>
 
-  <!-- Navbar -->
-  <nav>
-    <img src="https://media.discordapp.net/attachments/1068665828112859177/1406577055596023808/SAB_seal.png" alt="Logo">
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Galerie</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero -->
   <section class="hero">
-    <h1>Rejoins l’univers SAB</h1>
-    <p>Une communauté unique et innovante</p>
+    <h1>Special Agent Bureau</h1>
+    <p>Le Special Agent Bureau est une unité d’élite chargée de la protection, de l’investigation et de la réponse aux menaces nationales et fédérales.</p>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="services">
-    <div class="service">
-      <h2>Manuel</h2>
-      <p>Découvrez nos guides et ressources.</p>
-    </div>
-    <div class="service">
-      <h2>Division</h2>
-      <p>Une organisation efficace et structurée.</p>
-    </div>
-    <div class="service">
-      <h2>Service</h2>
-      <p>Des prestations adaptées à vos besoins.</p>
-    </div>
-  </section>
-
-  <!-- Galerie -->
-  <section id="gallery" class="gallery">
-    <img src="https://media.discordapp.net/attachments/1396014607511851029/1405921005456719872/sHes99D.png" alt="pic1">
-    <img src="https://media.discordapp.net/attachments/1396014607511851029/1405921006803095552/LciGIwQ.png" alt="pic2">
-    <img src="https://media.discordapp.net/attachments/1396014607511851029/1404798016145195039/BmaW8pm.png" alt="pic3">
-    <img src="https://media.discordapp.net/attachments/1396014607511851029/1404373989622550648/image.png" alt="pic4">
-    <img src="https://media.discordapp.net/attachments/1396014607511851029/1403675478572798032/Capture_decran_2025-08-09_111224.png" alt="pic5">
-    <img src="https://media.discordapp.net/attachments/1396014607511851029/1399908535239835722/image.png" alt="pic6">
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact">
-    <p>&copy; 2025 SAB. Tous droits réservés.</p>
+  <footer>
+    &copy; 2025 Special Agent Bureau — Manuel interne RP
   </footer>
-
 </body>
 </html>
