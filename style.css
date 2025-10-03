@@ -88,3 +88,46 @@ footer {
     height: auto;
     border-radius: 4px;
 }
+/* Style du menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #002868;
+}
+
+nav ul li {
+    margin-left: 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #002868;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-content a {
+    padding: 0.75rem 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
