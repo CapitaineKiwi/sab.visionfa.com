@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Galerie - SAB</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAB - Galerie</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="manuel.html">Manuel</a>
-      <a href="protocoles.html">Protocoles</a>
-      <a href="divisions/investigation.html">Divisions</a>
-      <a href="chiefs.html">Chief Office</a>
-      <a href="galerie.html">Galerie</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h2>Galerie Photos</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="images/service1.jpg" alt="Photo 1">
-      </div>
-      <div class="card">
-        <img src="images/service2.jpg" alt="Photo 2">
-      </div>
-      <div class="card">
-        <img src="images/service3.jpg" alt="Photo 3">
-      </div>
-      <!-- Ajoute autant de photos que tu veux -->
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Special Agent Bureau
-  </footer>
+    <header>
+        <div class="logo">
+            <img src="images/sab-logo.png" alt="Logo SAB">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="manuel.html">Manuel Interne</a></li>
+                <li class="dropdown">
+                    <a href="#">Divisions ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="divisions/investigation.html">Investigation</a></li>
+                        <li><a href="divisions/doj-response.html">DOJ Response</a></li>
+                        <li><a href="divisions/dignitary-protection.html">Protection des Dignitaires</a></li>
+                        <li><a href="divisions/federal-court.html">Cour Fédérale</a></li>
+                        <li><a href="divisions/air-recognition.html">Reconnaissance Aérienne</a></li>
+                    </ul>
+                </li>
+                <li><a href="chiefs.html">Chief Office</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h1>Galerie Photos</h1>
+            <div class="gallery-grid">
+                <img src="images/photo1.jpg" alt="Photo 1">
+                <img src="images/photo2.jpg" alt="Photo 2">
+                <!-- Ajoute d'autres images ici -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Special Agent Bureau. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
